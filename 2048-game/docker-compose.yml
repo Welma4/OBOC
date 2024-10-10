@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+  game1:
+    image: 2048-game
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    command: ["npm", "start"]
+    ports:
+      - "8080:8080"
+  game2:
+      image: 2048-game
+      build: 
+        context: .
+        dockerfile: Dockerfile
+      command: ["npm", "start"]
+      ports:
+        - "8090:8080"
