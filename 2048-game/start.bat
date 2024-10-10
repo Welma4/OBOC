@@ -13,4 +13,3 @@ echo Launching second container...
 docker run -d --name game2 -p 8090:8080 2048-game
 
 pause
-
