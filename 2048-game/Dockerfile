@@ -2,9 +2,7 @@ FROM node:16-alpine
 
 WORKDIR /app
 
-COPY package*.json game.js highscore.js index.html, server.js style.css ./
-
-RUN npm install
+COPY game.js highscore.js index.html, package.json, server.js style.css ./
 
 EXPOSE 8080
 
